@@ -3,10 +3,201 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prueba GitHub</title>
+
+    <title>Gina's Birthday</title>
+
+    <link rel="stylesheet" href="estilos.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <h1>Hola GitHub bro 🚀</h1>
-    <p>Este es mi primer archivo HTML de prueba.</p>
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p class="mini">✨ Estás Invitado ✨</p>
+
+            <h1>
+                Gina's
+                <span>25 Birthday</span>
+            </h1>
+
+            <p class="description">
+                Acompáñanos a celebrar una noche especial llena de música,
+                diversión y momentos inolvidables.
+            </p>
+
+            <!-- CONTADOR -->
+
+            <div class="countdown">
+
+                <div>
+                    <h2 id="days">00</h2>
+                    <span>Días</span>
+                </div>
+
+                <div>
+                    <h2 id="hours">00</h2>
+                    <span>Horas</span>
+                </div>
+
+                <div>
+                    <h2 id="minutes">00</h2>
+                    <span>Min</span>
+                </div>
+
+                <div>
+                    <h2 id="seconds">00</h2>
+                    <span>Seg</span>
+                </div>
+
+            </div>
+
+            <!-- BOTONES -->
+
+            <div class="buttons">
+
+                <button id="confirmar">
+                    Confirmar Asistencia
+                </button>
+
+                <a href="#info" class="btn-secondary">
+                    Ver Detalles
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- INFORMACIÓN -->
+
+    <section class="info" id="info">
+
+        <div class="title">
+
+            <h2>🎉 Información del Evento 🎉</h2>
+
+            <p>
+                Todo lo que necesitas saber para la gran noche.
+            </p>
+
+        </div>
+
+        <div class="cards">
+
+            <div class="card reveal">
+
+                <div class="icon">📅</div>
+
+                <h3>Fecha</h3>
+
+                <p>30 de Junio</p>
+
+            </div>
+
+
+            <div class="card reveal">
+
+                <div class="icon">🕘</div>
+
+                <h3>Hora</h3>
+
+                <p>9:00 PM</p>
+
+            </div>
+
+
+            <div class="card reveal">
+
+                <div class="icon">📍</div>
+
+                <h3>Lugar</h3>
+
+                <p>Calle Chavalina #276</p>
+
+            </div>
+
+
+            <div class="card reveal">
+
+                <div class="icon">🎂</div>
+
+                <h3>Celebración</h3>
+
+                <p>25 años de Gina</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- GALERÍA -->
+
+    <section class="gallery">
+
+        <div class="title">
+
+            <h2>📸 Momentos Especiales</h2>
+
+            <p>
+                Una noche elegante, divertida y llena de recuerdos.
+            </p>
+
+        </div>
+
+        <div class="gallery-grid">
+
+            <div class="box reveal">
+
+                <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?q=80&w=1400&auto=format&fit=crop">
+
+            </div>
+
+
+            <div class="box reveal">
+
+                <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=1400&auto=format&fit=crop">
+
+            </div>
+
+
+            <div class="box reveal">
+
+                <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?q=80&w=1400&auto=format&fit=crop">
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <h2>Te Esperamos ✨</h2>
+
+        <p>
+            Será una noche inolvidable 💖
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
 </body>
 </html>

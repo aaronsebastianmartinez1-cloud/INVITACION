@@ -306,3 +306,150 @@ footer p{
     }
 
 }
+/* SORPRESA */
+
+.surprise-container{
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.surprise-btn{
+    background: #d17b49;
+    color: white;
+
+    border: none;
+
+    padding: 18px 40px;
+
+    border-radius: 50px;
+
+    font-size: 18px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+    box-shadow: 0 10px 25px rgba(209,123,73,.3);
+}
+
+.surprise-btn:hover{
+    transform: scale(1.07);
+    background: #b86435;
+}
+
+/* MODAL */
+
+.modal{
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0,0,0,.55);
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: .4s;
+
+    z-index: 1000;
+}
+
+.modal.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content{
+    background: white;
+
+    width: 90%;
+    max-width: 500px;
+
+    padding: 50px 35px;
+
+    border-radius: 30px;
+
+    text-align: center;
+
+    position: relative;
+
+    animation: popup .5s ease;
+}
+
+.modal-content h2{
+    color: #d17b49;
+    margin-bottom: 20px;
+    font-size: 38px;
+}
+
+.modal-content p{
+    color: #6d5c55;
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+.close{
+    position: absolute;
+
+    top: 20px;
+    right: 25px;
+
+    font-size: 32px;
+
+    cursor: pointer;
+
+    color: #999;
+}
+
+.close:hover{
+    color: #d17b49;
+}
+
+.heart{
+    font-size: 70px;
+    margin-top: 30px;
+
+    animation: pulse 1.5s infinite;
+}
+
+/* ANIMACIONES */
+
+@keyframes popup{
+
+    from{
+        transform: scale(.7);
+        opacity: 0;
+    }
+
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
+
+}
+
+@keyframes pulse{
+
+    0%{
+        transform: scale(1);
+    }
+
+    50%{
+        transform: scale(1.15);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+
+}

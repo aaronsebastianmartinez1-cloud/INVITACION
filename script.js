@@ -108,14 +108,34 @@ function randomColor(){
     ];
 
 }
+// MODAL SORPRESA
 
+const modal = document.getElementById("modal");
 
+const openModal =
+document.getElementById("openModal");
 
-window.addEventListener("scroll", () => {
+const closeModal =
+document.querySelector(".close");
 
-    const scroll = window.scrollY;
+openModal.addEventListener("click", () => {
 
-    document.querySelector(".hero").style.transform =
-    `translateY(${scroll * 0.2}px)`;
+    modal.classList.add("active");
+
+});
+
+closeModal.addEventListener("click", () => {
+
+    modal.classList.remove("active");
+
+});
+
+window.addEventListener("click", (e) => {
+
+    if(e.target === modal){
+
+        modal.classList.remove("active");
+
+    }
 
 });

@@ -3,21 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Gina's Birthday</title>
-
     <link rel="stylesheet" href="estilos.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- HERO -->
+    <!-- INTRO SOBRE -->
+    <div id="intro" class="intro-overlay">
 
+        <div id="envelope-wrap">
+            <div class="env-body"></div>
+            <div class="env-left"></div>
+            <div class="env-right"></div>
+            <div class="env-bottom"></div>
+            <div class="env-flap" id="flap"></div>
+            <div class="seal" id="seal">💌</div>
+            <p class="hint">Toca el sobre para abrir 💌</p>
+        </div>
+
+        <div id="letter">
+            <p class="lmini">✨ CELEBRA CONMIGO ✨</p>
+            <h2>Gina's <span>25 Birthday</span></h2>
+            <p>Acompáñanos a celebrar una noche especial llena de música y momentos inolvidables.</p>
+            <p class="ldate">📅 30 de Junio · 9:00 PM<br>📍 Calle Chavalina #276</p>
+            <button id="open-btn">Entrar a la invitación ✨</button>
+        </div>
+
+    </div>
+
+
+    <!-- HERO -->
     <section class="hero">
 
         <div class="hero-content">
@@ -35,43 +54,33 @@
             </p>
 
             <!-- CONTADOR -->
-
             <div class="countdown">
-
                 <div>
                     <h2 id="days">00</h2>
                     <span>Días</span>
                 </div>
-
                 <div>
                     <h2 id="hours">00</h2>
                     <span>Horas</span>
                 </div>
-
                 <div>
                     <h2 id="minutes">00</h2>
                     <span>Min</span>
                 </div>
-
                 <div>
                     <h2 id="seconds">00</h2>
                     <span>Seg</span>
                 </div>
-
             </div>
 
             <!-- BOTONES -->
-
             <div class="buttons">
-
                 <button id="confirmar">
                     Confirmar Asistencia
                 </button>
-
                 <a href="#info" class="btn-secondary">
                     Ver Detalles
                 </a>
-
             </div>
 
         </div>
@@ -80,62 +89,37 @@
 
 
     <!-- INFORMACIÓN -->
-
     <section class="info" id="info">
 
         <div class="title">
-
             <h2>🎉 Información del Evento 🎉</h2>
-
-            <p>
-                Todo lo que necesitas saber para la gran noche.
-            </p>
-
+            <p>Todo lo que necesitas saber para la gran noche.</p>
         </div>
 
         <div class="cards">
 
             <div class="card reveal">
-
                 <div class="icon">📅</div>
-
                 <h3>Fecha</h3>
-
                 <p>30 de Junio</p>
-
             </div>
 
-
             <div class="card reveal">
-
                 <div class="icon">🕘</div>
-
                 <h3>Hora</h3>
-
                 <p>9:00 PM</p>
-
             </div>
 
-
             <div class="card reveal">
-
                 <div class="icon">📍</div>
-
                 <h3>Lugar</h3>
-
                 <p>Calle Chavalina #276</p>
-
             </div>
 
-
             <div class="card reveal">
-
                 <div class="icon">🎂</div>
-
                 <h3>Celebración</h3>
-
                 <p>25 años de Gina</p>
-
             </div>
 
         </div>
@@ -144,39 +128,25 @@
 
 
     <!-- GALERÍA -->
-
     <section class="gallery">
 
         <div class="title">
-
             <h2>📸 Momentos Especiales</h2>
-
-            <p>
-                Una noche elegante, divertida y llena de recuerdos.
-            </p>
-
+            <p>Una noche elegante, divertida y llena de recuerdos.</p>
         </div>
 
         <div class="gallery-grid">
 
             <div class="box reveal">
-
                 <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?q=80&w=1400&auto=format&fit=crop">
-
             </div>
 
-
             <div class="box reveal">
-
                 <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=1400&auto=format&fit=crop">
-
             </div>
 
-
             <div class="box reveal">
-
                 <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?q=80&w=1400&auto=format&fit=crop">
-
             </div>
 
         </div>
@@ -185,50 +155,34 @@
 
 
     <!-- FOOTER -->
-
     <footer>
-
         <h2>Te Esperamos ✨</h2>
-
-        <p>
-            Será una noche inolvidable 💖
-        </p>
-
+        <p>Será una noche inolvidable 💖</p>
     </footer>
-<!-- BOTÓN SORPRESA -->
-
-<div class="surprise-container">
-
-    <button id="openModal" class="surprise-btn">
-        🎁 Abrir Sorpresa
-    </button>
-
-</div>
 
 
-<!-- MODAL -->
-
-<div class="modal" id="modal">
-
-    <div class="modal-content">
-
-        <span class="close">&times;</span>
-
-        <h2>✨ Para Gina ✨</h2>
-
-        <p>
-            Que estos 25 años estén llenos de momentos hermosos,
-            risas infinitas y sueños cumplidos 💖
-        </p>
-
-        <div class="heart">💖</div>
-
+    <!-- BOTÓN SORPRESA -->
+    <div class="surprise-container">
+        <button id="openModal" class="surprise-btn">
+            🎁 Abrir Sorpresa
+        </button>
     </div>
 
-</div>
+
+    <!-- MODAL -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>✨ Para Gina ✨</h2>
+            <p>
+                Que estos 25 años estén llenos de momentos hermosos,
+                risas infinitas y sueños cumplidos 💖
+            </p>
+            <div class="heart">💖</div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 
 </body>
-
 </html>

@@ -108,12 +108,7 @@ window.addEventListener("scroll", () => {
 // CONFIRMAR ASISTENCIA + CONFETTI
 // ================================
 
-const button = document.getElementById("confirmar");
 
-button.addEventListener("click", () => {
-    button.innerHTML = "🎉 Asistencia Confirmada";
-    launchConfetti();
-});
 
 function launchConfetti() {
     for (let i = 0; i < 150; i++) {
@@ -153,5 +148,48 @@ closeModal.addEventListener("click", () => {
 window.addEventListener("click", (e) => {
     if (e.target === modal) {
         modal.classList.remove("active");
+    }
+});
+
+
+// ================================
+// MODAL FORMULARIO
+// ================================
+
+const modalForm     = document.getElementById("modalForm");
+const closeForm     = document.querySelector(".close-form");
+
+document.getElementById("confirmar").addEventListener("click", () => {
+    launchConfetti();
+    setTimeout(() => {
+        modalForm.classList.add("active");
+    }, 600);
+});
+
+closeForm.addEventListener("click", () => {
+    modalForm.classList.remove("active");
+});
+
+window.addEventListener("click", (e) => {
+    if (e.target === modalForm) {
+        modalForm.classList.remove("active");
+    }
+});
+// MODAL MAPA
+const modalMap   = document.getElementById("modalMap");
+const openMap    = document.getElementById("openMap");
+const closeMap   = document.querySelector(".close-map");
+
+openMap.addEventListener("click", () => {
+    modalMap.classList.add("active");
+});
+
+closeMap.addEventListener("click", () => {
+    modalMap.classList.remove("active");
+});
+
+window.addEventListener("click", (e) => {
+    if (e.target === modalMap) {
+        modalMap.classList.remove("active");
     }
 });

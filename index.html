@@ -26,7 +26,7 @@
         </div>
 
         <div id="letter">
-            <p class="lmini">✨ CELEBRA CONMIGO ✨</p>
+            <p class="lmini">✨ ESTÁS INVITADA ✨</p>
             <h2>Gina's <span>25 Birthday</span></h2>
             <p>Acompáñanos a celebrar una noche especial llena de música y momentos inolvidables.</p>
             <p class="ldate">📅 30 de Junio · 9:00 PM<br>📍 Calle Chavalina #276</p>
@@ -111,9 +111,10 @@
             </div>
 
             <div class="card reveal">
-                <div class="icon">📍</div>
-                <h3>Lugar</h3>
-                <p>Calle Chavalina #276</p>
+             <div class="icon">📍</div>
+             <h3>Lugar</h3>
+             <p>Calle Chavalina #276</p>
+           <button id="openMap" class="map-btn">Ver mapa</button>
             </div>
 
             <div class="card reveal">
@@ -138,15 +139,15 @@
         <div class="gallery-grid">
 
             <div class="box reveal">
-                <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?q=80&w=1400&auto=format&fit=crop">
+                <img src="CUMPLE 22 WINI.jpeg">
             </div>
 
             <div class="box reveal">
-                <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=1400&auto=format&fit=crop">
+                <img src="wini flores.jpeg">
             </div>
 
             <div class="box reveal">
-                <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?q=80&w=1400&auto=format&fit=crop">
+                <img src="CUMPLE 24 WINI.jpeg">
             </div>
 
         </div>
@@ -169,7 +170,7 @@
     </div>
 
 
-    <!-- MODAL -->
+    <!-- MODAL SORPRESA -->
     <div class="modal" id="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
@@ -182,6 +183,50 @@
         </div>
     </div>
 
+
+    <!-- MODAL FORMULARIO -->
+    <div class="modal-form" id="modalForm">
+
+        <div class="modal-form-content">
+
+            <span class="close-form">&times;</span>
+
+            <h2>🎀 Confirmar Asistencia</h2>
+            <p>Déjanos saber que vas a venir 💖</p>
+
+            <iframe
+                src="https://docs.google.com/forms/d/e/1FAIpQLSfSpuuoJkx-KnZx4CGv80yQZ33Q8VTYDighCzuJwpf-0FQdIw/viewform?embedded=true"
+                width="100%"
+                height="520"
+                frameborder="0"
+                marginheight="0"
+                marginwidth="0">
+                Cargando…
+            </iframe>
+
+        </div>
+
+    </div>
+<!-- MODAL MAPA -->
+<div class="modal-map" id="modalMap">
+    <div class="modal-map-content">
+        <span class="close-map">&times;</span>
+        <h2>📍 Ubicación</h2>
+        <p>Calle Chavalina #276</p>
+        <iframe
+            src="https://www.google.com/maps?q=-13.4195037,-76.1225526&z=17&output=embed"
+            width="100%"
+            height="400"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+        <a href="https://www.google.com/maps?q=-13.4195037,-76.1225526"
+           target="_blank"
+           class="dir-btn">
+            Cómo llegar 🗺️
+        </a>
+    </div>
+</div>
     <script src="script.js"></script>
 
 </body>

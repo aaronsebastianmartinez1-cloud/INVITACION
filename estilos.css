@@ -396,6 +396,85 @@ footer p {
 }
 
 
+
+/* MODAL FORMULARIO */
+
+.modal-form {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+    z-index: 1000;
+    padding: 20px;
+}
+
+.modal-form.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-form-content {
+    background: #fffaf5;
+    width: 100%;
+    max-width: 620px;
+    max-height: 90vh;
+    padding: 40px 35px 30px;
+    border-radius: 30px;
+    text-align: center;
+    position: relative;
+    animation: popup .4s ease;
+    overflow-y: auto;
+}
+
+.modal-form-content h2 {
+    color: #d17b49;
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.modal-form-content > p {
+    color: #8a746b;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.modal-form-content iframe {
+    border-radius: 16px;
+    display: block;
+}
+
+.close-form {
+    position: absolute;
+    top: 18px;
+    right: 24px;
+    font-size: 32px;
+    cursor: pointer;
+    color: #999;
+    line-height: 1;
+}
+
+.close-form:hover {
+    color: #d17b49;
+}
+
+@media(max-width: 768px) {
+    .modal-form-content {
+        padding: 36px 18px 20px;
+    }
+    .modal-form-content iframe {
+        height: 480px;
+    }
+}
+
+
 /* ================================
    INTRO SOBRE
 ================================ */
@@ -622,4 +701,106 @@ footer p {
 @keyframes floatUp {
     0%   { opacity: 1; transform: translateY(0) rotate(0deg); }
     100% { opacity: 0; transform: translateY(-80vh) rotate(720deg); }
+}
+/* MODAL MAPA */
+
+.map-btn {
+    margin-top: 12px;
+    background: #d17b49;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+    box-shadow: none;
+}
+
+.map-btn:hover {
+    background: #b86435;
+    transform: scale(1.05);
+}
+
+.modal-map {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+    z-index: 1000;
+    padding: 20px;
+}
+
+.modal-map.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-map-content {
+    background: #fffaf5;
+    width: 100%;
+    max-width: 620px;
+    padding: 40px 35px 30px;
+    border-radius: 30px;
+    text-align: center;
+    position: relative;
+    animation: popup .4s ease;
+}
+
+.modal-map-content h2 {
+    color: #d17b49;
+    font-size: 26px;
+    margin-bottom: 6px;
+}
+
+.modal-map-content > p {
+    color: #8a746b;
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+.modal-map-content iframe {
+    border-radius: 16px;
+    display: block;
+}
+
+.close-map {
+    position: absolute;
+    top: 18px;
+    right: 24px;
+    font-size: 32px;
+    cursor: pointer;
+    color: #999;
+    line-height: 1;
+}
+
+.close-map:hover {
+    color: #d17b49;
+}
+
+.dir-btn {
+    display: inline-block;
+    margin-top: 16px;
+    background: #d17b49;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.dir-btn:hover {
+    background: #b86435;
+    transform: scale(1.05);
 }

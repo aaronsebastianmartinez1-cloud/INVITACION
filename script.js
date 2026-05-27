@@ -14,13 +14,11 @@ function openEnvelope() {
     document.getElementById('seal').classList.add('hide');
 
     setTimeout(() => {
-        // El sobre se encoge hacia abajo
         const wrap = document.getElementById('envelope-wrap');
         wrap.style.transform = 'translateY(80px) scale(0.85)';
         wrap.style.opacity = '0.3';
         wrap.style.pointerEvents = 'none';
 
-        // La carta sube
         document.getElementById('letter').classList.add('rise');
 
         setTimeout(() => {
@@ -108,8 +106,6 @@ window.addEventListener("scroll", () => {
 // CONFIRMAR ASISTENCIA + CONFETTI
 // ================================
 
-
-
 function launchConfetti() {
     for (let i = 0; i < 150; i++) {
         const confeti = document.createElement("div");
@@ -130,34 +126,11 @@ function randomColor() {
 
 
 // ================================
-// MODAL SORPRESA
-// ================================
-
-const modal      = document.getElementById("modal");
-const openModal  = document.getElementById("openModal");
-const closeModal = document.querySelector(".close");
-
-openModal.addEventListener("click", () => {
-    modal.classList.add("active");
-});
-
-closeModal.addEventListener("click", () => {
-    modal.classList.remove("active");
-});
-
-window.addEventListener("click", (e) => {
-    if (e.target === modal) {
-        modal.classList.remove("active");
-    }
-});
-
-
-// ================================
 // MODAL FORMULARIO
 // ================================
 
-const modalForm     = document.getElementById("modalForm");
-const closeForm     = document.querySelector(".close-form");
+const modalForm = document.getElementById("modalForm");
+const closeForm = document.querySelector(".close-form");
 
 document.getElementById("confirmar").addEventListener("click", () => {
     launchConfetti();
@@ -175,10 +148,15 @@ window.addEventListener("click", (e) => {
         modalForm.classList.remove("active");
     }
 });
+
+
+// ================================
 // MODAL MAPA
-const modalMap   = document.getElementById("modalMap");
-const openMap    = document.getElementById("openMap");
-const closeMap   = document.querySelector(".close-map");
+// ================================
+
+const modalMap = document.getElementById("modalMap");
+const openMap  = document.getElementById("openMap");
+const closeMap = document.querySelector(".close-map");
 
 openMap.addEventListener("click", () => {
     modalMap.classList.add("active");

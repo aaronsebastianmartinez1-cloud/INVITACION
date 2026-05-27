@@ -111,10 +111,10 @@
             </div>
 
             <div class="card reveal">
-             <div class="icon">📍</div>
-             <h3>Lugar</h3>
-             <p>Calle Chavalina #276</p>
-           <button id="openMap" class="map-btn">Ver mapa</button>
+                <div class="icon">📍</div>
+                <h3>Lugar</h3>
+                <p>Calle Chavalina #276</p>
+                <button id="openMap" class="map-btn">Ver mapa</button>
             </div>
 
             <div class="card reveal">
@@ -155,6 +155,27 @@
     </section>
 
 
+    <!-- RECUERDOS -->
+    <section class="recuerdos">
+
+        <div class="title">
+            <h2>📸 Comparte tus Recuerdos</h2>
+            <p>¿Capturaste algo especial esa noche? ¡Súbelo aquí! 💖</p>
+        </div>
+
+        <div class="recuerdos-box reveal">
+            <div class="recuerdos-icon">🎞️</div>
+            <p class="recuerdos-text">Fotos, videos, momentos...<br>todo es bienvenido</p>
+            <a href="https://drive.google.com/drive/folders/1oe2WHR91Q0fhRJ02mf6cvXGc7nvxsH5w?usp=sharing"
+               target="_blank"
+               class="recuerdos-btn">
+                📤 Subir fotos y videos
+            </a>
+        </div>
+
+    </section>
+
+
     <!-- FOOTER -->
     <footer>
         <h2>Te Esperamos ✨</h2>
@@ -162,38 +183,12 @@
     </footer>
 
 
-    <!-- BOTÓN SORPRESA -->
-    <div class="surprise-container">
-        <button id="openModal" class="surprise-btn">
-            🎁 Abrir Sorpresa
-        </button>
-    </div>
-
-
-    <!-- MODAL SORPRESA -->
-    <div class="modal" id="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>✨ Para Gina ✨</h2>
-            <p>
-                Que estos 25 años estén llenos de momentos hermosos,
-                risas infinitas y sueños cumplidos 💖
-            </p>
-            <div class="heart">💖</div>
-        </div>
-    </div>
-
-
     <!-- MODAL FORMULARIO -->
     <div class="modal-form" id="modalForm">
-
         <div class="modal-form-content">
-
             <span class="close-form">&times;</span>
-
             <h2>🎀 Confirmar Asistencia</h2>
             <p>Déjanos saber que vas a venir 💖</p>
-
             <iframe
                 src="https://docs.google.com/forms/d/e/1FAIpQLSfSpuuoJkx-KnZx4CGv80yQZ33Q8VTYDighCzuJwpf-0FQdIw/viewform?embedded=true"
                 width="100%"
@@ -203,30 +198,31 @@
                 marginwidth="0">
                 Cargando…
             </iframe>
-
         </div>
+    </div>
 
+
+    <!-- MODAL MAPA -->
+    <div class="modal-map" id="modalMap">
+        <div class="modal-map-content">
+            <span class="close-map">&times;</span>
+            <h2>📍 Ubicación</h2>
+            <p>Calle Chavalina #276</p>
+            <iframe
+                src="https://www.google.com/maps?q=-13.4195037,-76.1225526&z=17&output=embed"
+                width="100%"
+                height="400"
+                frameborder="0"
+                allowfullscreen>
+            </iframe>
+            <a href="https://www.google.com/maps?q=-13.4195037,-76.1225526"
+               target="_blank"
+               class="dir-btn">
+                Cómo llegar 🗺️
+            </a>
+        </div>
     </div>
-<!-- MODAL MAPA -->
-<div class="modal-map" id="modalMap">
-    <div class="modal-map-content">
-        <span class="close-map">&times;</span>
-        <h2>📍 Ubicación</h2>
-        <p>Calle Chavalina #276</p>
-        <iframe
-            src="https://www.google.com/maps?q=-13.4195037,-76.1225526&z=17&output=embed"
-            width="100%"
-            height="400"
-            frameborder="0"
-            allowfullscreen>
-        </iframe>
-        <a href="https://www.google.com/maps?q=-13.4195037,-76.1225526"
-           target="_blank"
-           class="dir-btn">
-            Cómo llegar 🗺️
-        </a>
-    </div>
-</div>
+
     <script src="script.js"></script>
 
 </body>
